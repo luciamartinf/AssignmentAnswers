@@ -1,8 +1,8 @@
 # Assigment 1 - Creating Objects
 
-## Lucía Martín Fernández
+Assignment 1 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
 
-Written in ruby
+## Lucía Martín Fernández
 
 ### USAGE:
 
