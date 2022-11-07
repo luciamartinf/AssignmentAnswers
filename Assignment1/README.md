@@ -8,6 +8,8 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 
 `usage: main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
 
+All requested files to run the script are contained in this github repository
+
 #### Arguments
 
 | **Argument**                           | **Description**                                                                                                 |                                                   
@@ -17,7 +19,6 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 |`cross_data.tsv`                                |  TSV file stored. Contains Parent1, Parent2, F2_Wild, F2_P1, F2_P2, F2_P1P2 columns                                            |                  
 |`new_stock_data.tsv`                                  | New TSV file. Update from seed_stock_data.tsv                    |                                                               
 
-All requested files to run the script are contained in this github repository
 
 ## SOURCE FILES
 
@@ -27,7 +28,7 @@ The following tasks are performed:
 
 **1) Argument control**
 - Checks that 4 arguments are given when running the code
-- *BONUS!!* Checks that introduced gene identification follows the Arabidopsis' format 
+- *BONUS!!* Checks that introduced gene-ids follow the Arabidopsis' format 
 
 **2) Plantation**
 -   Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
@@ -47,7 +48,7 @@ Class for File Management. Methods defined:
 2) *BONUS!!* `create_updated_file`: Class method to create an updated file with all of the objects of a given class. 
 
 
-### CLASSES  
+### DATA CLASSES  
 
 A class has been defined for each of the 3 given files.
 
