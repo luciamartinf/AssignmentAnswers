@@ -1,8 +1,8 @@
 # Assigment 1 - Creating Objects
 
-Assignment 1 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
+### Lucía Martín Fernández
 
-## Lucía Martín Fernández
+Assignment 1 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
 
 ### USAGE:
 
@@ -21,29 +21,29 @@ All requested files to run the script are contained in this github repository
 
 ### SOURCE FILES
 
-##### main.rb
+### main.rb
 
 The following tasks are performed:
 
-1) Argument control
+**1) Argument control**
 
-2) Plantation
-- Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
-- Creation of an updated file with the new state of the genebank seedstock
-- When a seed stock is finished, a warning messaege appears on screen.
+**2) Plantation**
+-   Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
+-   Creation of an updated file with the new state of the genebank seedstock
+-   When a seed stock is finished, a warning messaege appears on screen.
 
-3) Determination of gentically-linked genes
-- Performance of a Chi-square test for each cross
-- If 2 genes are linked, this information appears on screen.
+**3) Determination of gentically-linked genes**
+-   Performance of a Chi-square test for each cross
+-   If 2 genes are linked, this information appears on screen.
 
-#### CLASSES  
+### CLASSES  
 
 
 
-##### FileMaster.rb
+#### FileMaster.rb
 
-##### Gene.rb
+#### Gene.rb
 
-##### SeedStock.rb
+#### SeedStock.rb
 
-##### HybridCross.rb
+#### HybridCross.rb
