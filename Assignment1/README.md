@@ -61,18 +61,18 @@ All 3 classes have some methods whith similar functions:
 
 And other methods specific for each class.
 
-#### Gene.rb
+### Gene.rb
 
 - `get_gene_info`: Class method to retrieve the whole instance with the seed_stock
 - `get_gene_name`: Class method to retrieve the name of the given gene identificator
 
-#### SeedStock.rb
+### SeedStock.rb
 
 - *BONUS!!* `get_seed_stock`: Class method to retrieve the whole instance with the seed_stock
 - `get_gene_id`: Class method to retrieve the id of the mutated gene in the indicated seed stock
 - `plant_seeds`: Instance method to plant seeds
 
-#### HybridCross.rb
+### HybridCross.rb
 
 - `get_crosses`: Class method to retrieve all crosses performed with a given seed
 - `get_cross`: Class method to retrieve the cross between two given seeds
