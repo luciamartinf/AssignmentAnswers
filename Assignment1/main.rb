@@ -4,12 +4,15 @@ require './HybridCross'
 require './FileMaster'
 require 'date'
 
+# Retrieve arguments
 gene_file, seedstock_file, crossdata_file, newstock_file = ARGV 
 
+# Create array of genes with 
 genes = FileMaster.load_from_file(gene_file, Gene)
 seeds = FileMaster.load_from_file(seedstock_file, SeedStock)
 cross = FileMaster.load_from_file(crossdata_file, HybridCross)
 
+puts seeds
 
 seeds.each { |s| s.plant_seeds }
 
