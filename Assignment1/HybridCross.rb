@@ -85,7 +85,7 @@ class HybridCross
     def chi_square 
         
         """
-        Instance method to calculate ChiSquare
+        Instance method to calculate Chi-Square test
         """
 
         total = f2_wild + f2_p1 + f2_p2 + f2_p1p2
