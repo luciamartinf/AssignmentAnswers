@@ -4,7 +4,6 @@ require './HybridCross'
 
 class FileMaster
 
-
     def FileMaster.load_from_file(filename, my_class)
 
         """
@@ -38,7 +37,6 @@ class FileMaster
         return object_list
 
     end
-
     
     def FileMaster.create_updated_file(filename, my_class)
 
@@ -54,6 +52,5 @@ class FileMaster
         end
 
     end
-
 
 end
