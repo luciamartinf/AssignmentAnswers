@@ -4,7 +4,7 @@
 
 Assignment 1 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
 
-### USAGE:
+## USAGE:
 
 `usage: main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
 
@@ -19,7 +19,7 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 
 All requested files to run the script are contained in this github repository
 
-### SOURCE FILES
+## SOURCE FILES
 
 ### main.rb
 
@@ -36,14 +36,41 @@ The following tasks are performed:
 -   Performance of a Chi-square test for each cross
 -   If 2 genes are linked, this information appears on screen.
 
+### FileMaster.rb
+
+Class for File Management. Methods defined:
+
+1) load_from_file: Class method to retrieve all lines of a specific file as instances of a given class. Returns an array with all objects.
+
+2) create_updated_file: Class method to create an updated file with all of the objects of a given class.
+
+
 ### CLASSES  
 
+A class has been defined for each of the 3 given files.
 
+All 3 classes have some methods whith similar functions:
 
-#### FileMaster.rb
+- new_from_hash: Class method to create an instance from hash
+- to_s: Instance method to retrieve the current instance as a string. Records are separated by tabs
+- get_header: Class method to retrieve class header
+- get_all: Class method to retrieve all instances from the class. The format is defined by the to_s method
+
+And other methods specific for each class.
 
 #### Gene.rb
 
+- get_gene_info: Class method to retrieve the whole instance with the seed_stock
+- get_gene_name: Class method to retrieve the name of the given gene identificator
+
 #### SeedStock.rb
 
+- get_seed_stock: Class method to retrieve the whole instance with the seed_stock
+- get_gene_id: Class method to retrieve the id of the mutated gene in the indicated seed stock
+- plant_seeds: Instance method to plant seeds
+
 #### HybridCross.rb
+
+- get_crosses: Class method to retrieve all crosses performed with a given seed
+- get_cross: Class method to retrieve the cross between two given seeds
+- chi_square: Instance method to calculate Chi-Square test
