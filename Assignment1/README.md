@@ -26,6 +26,8 @@ All requested files to run the script are contained in this github repository
 The following tasks are performed:
 
 **1) Argument control**
+- Checks that 4 arguments are given when running the code
+- *BONUS!!* Checks that introduced gene identification follows the Arabidopsis' format 
 
 **2) Plantation**
 -   Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
@@ -40,9 +42,9 @@ The following tasks are performed:
 
 Class for File Management. Methods defined:
 
-1) load_from_file: Class method to retrieve all lines of a specific file as instances of a given class. Returns an array with all objects.
+1) *BONUS!!* `load_from_file`: Class method to retrieve all lines of a specific file as instances of a given class. Returns an array with all objects. 
 
-2) create_updated_file: Class method to create an updated file with all of the objects of a given class.
+2) *BONUS!!* `create_updated_file`: Class method to create an updated file with all of the objects of a given class. 
 
 
 ### CLASSES  
@@ -51,26 +53,27 @@ A class has been defined for each of the 3 given files.
 
 All 3 classes have some methods whith similar functions:
 
-- new_from_hash: Class method to create an instance from hash
-- to_s: Instance method to retrieve the current instance as a string. Records are separated by tabs
-- get_header: Class method to retrieve class header
-- get_all: Class method to retrieve all instances from the class. The format is defined by the to_s method
+- `initialize`: Definition of initialize method
+- `new_from_hash`: Class method to create an instance from hash
+- `to_s`: Instance method to retrieve the current instance as a string. Records are separated by tabs
+- `get_header`: Class method to retrieve class header
+- `get_all`: Class method to retrieve all instances from the class. The format is defined by the to_s method
 
 And other methods specific for each class.
 
 #### Gene.rb
 
-- get_gene_info: Class method to retrieve the whole instance with the seed_stock
-- get_gene_name: Class method to retrieve the name of the given gene identificator
+- `get_gene_info`: Class method to retrieve the whole instance with the seed_stock
+- `get_gene_name`: Class method to retrieve the name of the given gene identificator
 
 #### SeedStock.rb
 
-- get_seed_stock: Class method to retrieve the whole instance with the seed_stock
-- get_gene_id: Class method to retrieve the id of the mutated gene in the indicated seed stock
-- plant_seeds: Instance method to plant seeds
+- *BONUS!!* `get_seed_stock`: Class method to retrieve the whole instance with the seed_stock
+- `get_gene_id`: Class method to retrieve the id of the mutated gene in the indicated seed stock
+- `plant_seeds`: Instance method to plant seeds
 
 #### HybridCross.rb
 
-- get_crosses: Class method to retrieve all crosses performed with a given seed
-- get_cross: Class method to retrieve the cross between two given seeds
-- chi_square: Instance method to calculate Chi-Square test
+- `get_crosses`: Class method to retrieve all crosses performed with a given seed
+- `get_cross`: Class method to retrieve the cross between two given seeds
+- `chi_square`: Instance method to calculate Chi-Square test
