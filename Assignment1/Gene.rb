@@ -67,7 +67,7 @@ class Gene
 
     def Gene.get_gene_name(id)
         """
-        Class method to retrieve the id of the mutated gene in the indicated seed stock
+        Class method to retrieve the name of the given gene identificator
         """
         name = @@id_name.fetch(id)
         return name
