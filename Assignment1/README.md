@@ -1,6 +1,6 @@
-#AssignmentAnswers/Assignment1
-
 # Assigment 1 - Creating Objects
+
+## Lucía Martín Fernández
 
 Written in ruby
 
@@ -17,15 +17,33 @@ Written in ruby
 |`cross_data.tsv`                                |  TSV file stored. Contains Parent1, Parent2, F2_Wild, F2_P1, F2_P2, F2_P1P2 columns                                            |                  
 |`new_stock_data.tsv`                                  | New TSV file. Update from seed_stock_data.tsv                    |                                                               
 
+All requested files to run the script are contained in this github repository
 
-### FILES.rb
+### SOURCE FILES
 
-#### main.rb
+##### main.rb
 
-#### FileMaster.rb
+The following tasks are performed:
 
-#### Gene.rb
+1) Argument control
 
-#### SeedStock.rb
+2) Plantation
+- Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
+- Creation of an updated file with the new state of the genebank seedstock
+- When a seed stock is finished, a warning messaege appears on screen.
 
-#### HybridCross.rb
+3) Determination of gentically-linked genes
+- Performance of a Chi-square test for each cross
+- If 2 genes are linked, this information appears on screen.
+
+#### CLASSES  
+
+
+
+##### FileMaster.rb
+
+##### Gene.rb
+
+##### SeedStock.rb
+
+##### HybridCross.rb
