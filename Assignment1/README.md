@@ -8,7 +8,7 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 
 `usage: main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
 
-All requested files to run the script are contained in this github repository
+All the files needed to run the script are contained in this github repository and detailed above
 
 #### Arguments
 
@@ -37,7 +37,7 @@ The following tasks are performed:
 
 **3) Determination of gentically-linked genes**
 -   Performance of a Chi-square test for each cross
--   If 2 genes are linked, this information appears on screen.
+-   Shows whenever two genes are linked
 
 ### FileMaster.rb
 
@@ -50,9 +50,7 @@ Class for File Management. Methods defined:
 
 ### DATA CLASSES  
 
-A class has been defined for each of the 3 given files.
-
-All 3 classes have some methods whith similar functions:
+A class has been defined for each of the 3 given data files with following common methods:
 
 - `initialize`: Definition of initialize method
 - `new_from_hash`: Class method to create an instance from hash
@@ -60,7 +58,7 @@ All 3 classes have some methods whith similar functions:
 - `get_header`: Class method to retrieve class header
 - `get_all`: Class method to retrieve all instances from the class. The format is defined by the to_s method
 
-And other methods specific for each class.
+And other class-specific methods are detailed hereafter.
 
 ### Gene.rb
 
