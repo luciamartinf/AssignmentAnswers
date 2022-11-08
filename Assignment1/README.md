@@ -8,7 +8,7 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 
 `usage: main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
 
-All the files needed to run the script are contained in this github repository and detailed above
+All the files needed to run the script are contained in this github repository and detailed below
 
 #### Arguments
 
@@ -33,7 +33,7 @@ The following tasks are performed:
 **2) Plantation**
 -   Simulation of planting 7 grams of seeds from each of the records in the seed stock genebank
 -   Creation of an updated file with the new state of the genebank seedstock
--   When a seed stock is finished, a warning messaege appears on screen.
+-   When a seed stock is finished, a warning message appears on screen.
 
 **3) Determination of gentically-linked genes**
 -   Performance of a Chi-square test for each cross
