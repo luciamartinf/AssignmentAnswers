@@ -48,7 +48,7 @@ class InteractionNetwork
     attr_accessor :go_annotations
     
     #
-    # Create a new instance of InteractionNetwork
+    # Inizialize method to create a new instance of InteractionNetwork. Called with new
     #
     # @param id [String] the id of the starting gene as a String
     # @param genelist [Array<String>] the list of genes of as an Array
@@ -66,7 +66,7 @@ class InteractionNetwork
     end
 
     #
-    # Get interactions of a gene
+    # Instance method to get interactions of a gene
     #
     # @param id [String] the id of the gene as a String
     # @param cutoff [Numeric] the cutoff for the score of the interaction as a Number. If no cutoff is given, the default value is 0.45 (medium confidence)
@@ -108,7 +108,7 @@ class InteractionNetwork
     end
 
     #
-    # Create Interaction Network starting with a gene id using a recursive function
+    # Instance method to create an interaction network starting with a gene id using a recursive function
     #
     # @param id [String] the id of the gene as a String
     # @return [Array<String, String>] the network list of genes that interact with each other as an Array
@@ -126,7 +126,7 @@ class InteractionNetwork
     end
 
     #
-    # Get all genes in the network as a simple Array
+    # Instance method to get all genes in the network as a simple Array
     #
     # @return [Array<String>] the list of genes of the network as an Array
     #
@@ -135,7 +135,7 @@ class InteractionNetwork
     end
 
     #
-    # Get all genes in the network that are also in the gene list as a simple Array
+    # Instance method to get all genes in the network that are also in the gene list as a simple Array
     #
     # @return [Array<String>] the list of genes included in both the network an the gene list as an Array
     #
@@ -149,7 +149,7 @@ class InteractionNetwork
     end
 
     #
-    # Get all annotations for all genes in the network
+    # Instance method to get GO and KEGG annotations for all genes in the network
     #
     def get_annotations
         @genes_network.each do |gene|
