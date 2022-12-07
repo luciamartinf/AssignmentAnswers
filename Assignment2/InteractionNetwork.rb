@@ -68,7 +68,7 @@ class InteractionNetwork
     #
     # Instance method to get interactions of a gene
     #
-    # @param id [String] the id of the gene as a String
+    # @param gene_id [String] the id of the gene as a String
     # @param cutoff [Numeric] the cutoff for the score of the interaction as a Number. If no cutoff is given, the default value is 0.45 (medium confidence)
     # @return [Array<String>] the new genes list of genes that can be added to the interaction network as an Array
     #
@@ -110,7 +110,7 @@ class InteractionNetwork
     #
     # Instance method to create an interaction network starting with a gene id using a recursive function
     #
-    # @param id [String] the id of the gene as a String
+    # @param gene_id [String] the id of the gene as a String
     # @return [Array<String, String>] the network list of genes that interact with each other as an Array
     #
     def create_network(gene_id) 
