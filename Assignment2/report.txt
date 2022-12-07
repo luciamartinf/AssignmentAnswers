@@ -1,0 +1,696 @@
+
+                                                 INTERACTION NETWORKS                               
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 1
+
+Interactions in Network 1: 
+	AT4G09650 <--> AT4G37260
+	AT4G37260 <--> AT1G03130
+	AT4G37260 <--> AT4G02770
+	AT4G02770 <--> AT1G31880
+	AT1G31880 <--> AT1G37130
+	AT1G37130 <--> AT5G18930
+	AT1G37130 <--> AT4G32570
+	AT4G32570 <--> AT4G09650
+	AT1G37130 <--> AT2G37630
+	AT1G37130 <--> AT5G60120
+	AT1G31880 <--> AT1G14280
+	AT1G14280 <--> AT1G35560
+	AT1G31880 <--> AT1G76080
+	AT1G76080 <--> AT5G19000
+	AT1G76080 <--> AT5G67300
+
+Out of 15 genes in Network 1, 6 genes are in the gene list: 
+	AT4G09650 AT1G03130 AT4G02770 AT1G37130 AT1G14280 AT1G76080 
+
+KEGG Pathways for all genes in Network 1: 
+	ID: ath00190, Pathway name: Oxidative phosphorylation
+	ID: ath00195, Pathway name: Photosynthesis
+	ID: ath00270, Pathway name: Cysteine and methionine metabolism
+	ID: ath00330, Pathway name: Arginine and proline metabolism
+	ID: ath00910, Pathway name: Nitrogen metabolism
+	ID: ath01100, Pathway name: Metabolic pathways
+
+GO Terms associated with the total of all genes in Network 1: 
+	ID: GO:0006122, Biological process: mitochondrial electron transport, ubiquinol to cytochrome c
+	ID: GO:0006355, Biological process: regulation of DNA-templated transcription
+	ID: GO:0006597, Biological process: spermine biosynthetic process
+	ID: GO:0006809, Biological process: nitric oxide biosynthetic process
+	ID: GO:0006970, Biological process: response to osmotic stress
+	ID: GO:0006979, Biological process: response to oxidative stress
+	ID: GO:0008295, Biological process: spermidine biosynthetic process
+	ID: GO:0008356, Biological process: asymmetric cell division
+	ID: GO:0009408, Biological process: response to heat
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009414, Biological process: response to water deprivation
+	ID: GO:0009416, Biological process: response to light stimulus
+	ID: GO:0009585, Biological process: red, far-red light phototransduction
+	ID: GO:0009610, Biological process: response to symbiotic fungus
+	ID: GO:0009611, Biological process: response to wounding
+	ID: GO:0009615, Biological process: response to virus
+	ID: GO:0009635, Biological process: response to herbicide
+	ID: GO:0009638, Biological process: phototropism
+	ID: GO:0009651, Biological process: response to salt stress
+	ID: GO:0009734, Biological process: auxin-activated signaling pathway
+	ID: GO:0009736, Biological process: cytokinin-activated signaling pathway
+	ID: GO:0009737, Biological process: response to abscisic acid
+	ID: GO:0009738, Biological process: abscisic acid-activated signaling pathway
+	ID: GO:0009751, Biological process: response to salicylic acid
+	ID: GO:0009753, Biological process: response to jasmonic acid
+	ID: GO:0009772, Biological process: photosynthetic electron transport in photosystem II
+	ID: GO:0009773, Biological process: photosynthetic electron transport in photosystem I
+	ID: GO:0009873, Biological process: ethylene-activated signaling pathway
+	ID: GO:0009908, Biological process: flower development
+	ID: GO:0009944, Biological process: polarity specification of adaxial/abaxial axis
+	ID: GO:0009946, Biological process: proximal/distal axis specification
+	ID: GO:0009965, Biological process: leaf morphogenesis
+	ID: GO:0010078, Biological process: maintenance of root meristem identity
+	ID: GO:0010088, Biological process: phloem development
+	ID: GO:0010286, Biological process: heat acclimation
+	ID: GO:0010315, Biological process: auxin export across the plasma membrane
+	ID: GO:0010338, Biological process: leaf formation
+	ID: GO:0010629, Biological process: negative regulation of gene expression
+	ID: GO:0010929, Biological process: positive regulation of auxin mediated signaling pathway
+	ID: GO:0015979, Biological process: photosynthesis
+	ID: GO:0015986, Biological process: proton motive force-driven ATP synthesis
+	ID: GO:0016567, Biological process: protein ubiquitination
+	ID: GO:0019760, Biological process: glucosinolate metabolic process
+	ID: GO:0030154, Biological process: cell differentiation
+	ID: GO:0031347, Biological process: regulation of defense response
+	ID: GO:0035556, Biological process: intracellular signal transduction
+	ID: GO:0042128, Biological process: nitrate assimilation
+	ID: GO:0042631, Biological process: cellular response to water deprivation
+	ID: GO:0042742, Biological process: defense response to bacterium
+	ID: GO:0045088, Biological process: regulation of innate immune response
+	ID: GO:0045454, Biological process: cell redox homeostasis
+	ID: GO:0045824, Biological process: negative regulation of innate immune response
+	ID: GO:0045892, Biological process: negative regulation of DNA-templated transcription
+	ID: GO:0046496, Biological process: nicotinamide nucleotide metabolic process
+	ID: GO:0048364, Biological process: root development
+	ID: GO:0048366, Biological process: leaf development
+	ID: GO:0048510, Biological process: regulation of timing of transition from vegetative to reproductive phase
+	ID: GO:0048527, Biological process: lateral root development
+	ID: GO:0048756, Biological process: sieve cell differentiation
+	ID: GO:0050832, Biological process: defense response to fungus
+	ID: GO:0071472, Biological process: cellular response to salt stress
+	ID: GO:0099402, Biological process: plant organ development
+	ID: GO:0140547, Biological process: acquisition of seed longevity
+	ID: GO:1900150, Biological process: regulation of defense response to fungus
+	ID: GO:1901001, Biological process: negative regulation of response to salt stress
+	ID: GO:2000022, Biological process: regulation of jasmonic acid mediated signaling pathway
+	ID: GO:2000031, Biological process: regulation of salicylic acid mediated signaling pathway
+	ID: GO:2000280, Biological process: regulation of root development
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 2
+
+Interactions in Network 2: 
+	AT5G04140 <--> AT4G37930
+
+Out of 2 genes in Network 2, 1 genes are in the gene list: 
+	AT5G04140 
+
+KEGG Pathways for all genes in Network 2: 
+	ID: ath00260, Pathway name: Glycine, serine and threonine metabolism
+	ID: ath00460, Pathway name: Cyanoamino acid metabolism
+	ID: ath00630, Pathway name: Glyoxylate and dicarboxylate metabolism
+	ID: ath00670, Pathway name: One carbon pool by folate
+	ID: ath00910, Pathway name: Nitrogen metabolism
+	ID: ath01100, Pathway name: Metabolic pathways
+	ID: ath01110, Pathway name: Biosynthesis of secondary metabolites
+	ID: ath01200, Pathway name: Carbon metabolism
+	ID: ath01230, Pathway name: Biosynthesis of amino acids
+	ID: ath01240, Pathway name: Biosynthesis of cofactors
+
+GO Terms associated with the total of all genes in Network 2: 
+	ID: GO:0006537, Biological process: glutamate biosynthetic process
+	ID: GO:0006541, Biological process: glutamine metabolic process
+	ID: GO:0006544, Biological process: glycine metabolic process
+	ID: GO:0006563, Biological process: L-serine metabolic process
+	ID: GO:0006565, Biological process: L-serine catabolic process
+	ID: GO:0006730, Biological process: one-carbon metabolic process
+	ID: GO:0007623, Biological process: circadian rhythm
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009416, Biological process: response to light stimulus
+	ID: GO:0009626, Biological process: plant-type hypersensitive response
+	ID: GO:0009744, Biological process: response to sucrose
+	ID: GO:0009853, Biological process: photorespiration
+	ID: GO:0019264, Biological process: glycine biosynthetic process from serine
+	ID: GO:0019676, Biological process: ammonia assimilation cycle
+	ID: GO:0035999, Biological process: tetrahydrofolate interconversion
+	ID: GO:0046653, Biological process: tetrahydrofolate metabolic process
+	ID: GO:0046655, Biological process: folic acid metabolic process
+	ID: GO:0080114, Biological process: positive regulation of glycine hydroxymethyltransferase activity
+	ID: GO:0097054, Biological process: L-glutamate biosynthetic process
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 3
+
+Interactions in Network 3: 
+	AT4G17460 <--> AT3G07220
+	AT3G07220 <--> AT5G15850
+	AT5G15850 <--> AT2G46340
+	AT5G15850 <--> AT3G15354
+	AT3G15354 <--> AT2G46340
+	AT5G15850 <--> AT1G53090
+	AT1G53090 <--> AT2G46340
+	AT5G15850 <--> AT2G32950
+	AT2G32950 <--> AT2G46340
+	AT5G15850 <--> AT4G10240
+	AT5G15850 <--> AT5G27910
+	AT5G15850 <--> AT1G08970
+	AT5G15850 <--> AT3G02150
+	AT3G02150 <--> AT5G17300
+	AT5G17300 <--> AT5G24520
+	AT5G17300 <--> AT1G76510
+	AT5G17300 <--> AT1G60250
+	AT1G60250 <--> AT1G71030
+	AT1G71030 <--> AT4G09820
+	AT1G71030 <--> AT4G32980
+	AT1G71030 <--> AT1G56650
+	AT5G17300 <--> AT5G15210
+	AT5G17300 <--> AT3G15030
+	AT3G15030 <--> AT4G17460
+	AT4G17460 <--> AT1G70920
+	AT4G17460 <--> AT4G37790
+	AT4G17460 <--> AT1G30490
+	AT4G17460 <--> AT5G12980
+	AT4G17460 <--> AT2G45680
+	AT4G17460 <--> AT2G44910
+	AT4G17460 <--> AT4G16780
+	AT4G17460 <--> AT3G60390
+	AT4G17460 <--> AT5G47370
+	AT4G17460 <--> AT2G22800
+	AT5G17300 <--> AT3G18550
+	AT5G17300 <--> AT5G08330
+	AT5G15850 <--> AT3G01140
+	AT5G15850 <--> AT1G26780
+	AT5G15850 <--> AT1G48000
+	AT5G15850 <--> AT5G65050
+	AT5G15850 <--> AT5G23000
+	AT5G15850 <--> AT5G54470
+	AT5G15850 <--> AT4G38960
+	AT5G15850 <--> AT4G12210
+	AT5G15850 <--> AT2G31380
+
+Out of 42 genes in Network 3, 5 genes are in the gene list: 
+	AT4G17460 AT5G15850 AT2G46340 AT5G17300 AT1G71030 
+
+KEGG Pathways for all genes in Network 3: 
+	ID: ath03018, Pathway name: RNA degradation
+	ID: ath04120, Pathway name: Ubiquitin mediated proteolysis
+	ID: ath04712, Pathway name: Circadian rhythm - plant
+
+GO Terms associated with the total of all genes in Network 3: 
+	ID: GO:0000398, Biological process: mRNA splicing, via spliceosome
+	ID: GO:0000902, Biological process: cell morphogenesis
+	ID: GO:0002239, Biological process: response to oomycetes
+	ID: GO:0003006, Biological process: developmental process involved in reproduction
+	ID: GO:0006021, Biological process: inositol biosynthetic process
+	ID: GO:0006281, Biological process: DNA repair
+	ID: GO:0006338, Biological process: chromatin remodeling
+	ID: GO:0006355, Biological process: regulation of DNA-templated transcription
+	ID: GO:0006357, Biological process: regulation of transcription by RNA polymerase II
+	ID: GO:0006468, Biological process: protein phosphorylation
+	ID: GO:0006629, Biological process: lipid metabolic process
+	ID: GO:0006869, Biological process: lipid transport
+	ID: GO:0007031, Biological process: peroxisome organization
+	ID: GO:0007623, Biological process: circadian rhythm
+	ID: GO:0008285, Biological process: negative regulation of cell population proliferation
+	ID: GO:0008361, Biological process: regulation of cell size
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009414, Biological process: response to water deprivation
+	ID: GO:0009555, Biological process: pollen development
+	ID: GO:0009585, Biological process: red, far-red light phototransduction
+	ID: GO:0009637, Biological process: response to blue light
+	ID: GO:0009640, Biological process: photomorphogenesis
+	ID: GO:0009641, Biological process: shade avoidance
+	ID: GO:0009647, Biological process: skotomorphogenesis
+	ID: GO:0009649, Biological process: entrainment of circadian clock
+	ID: GO:0009658, Biological process: chloroplast organization
+	ID: GO:0009718, Biological process: anthocyanin-containing compound biosynthetic process
+	ID: GO:0009723, Biological process: response to ethylene
+	ID: GO:0009725, Biological process: response to hormone
+	ID: GO:0009733, Biological process: response to auxin
+	ID: GO:0009734, Biological process: auxin-activated signaling pathway
+	ID: GO:0009735, Biological process: response to cytokinin
+	ID: GO:0009737, Biological process: response to abscisic acid
+	ID: GO:0009738, Biological process: abscisic acid-activated signaling pathway
+	ID: GO:0009740, Biological process: gibberellic acid mediated signaling pathway
+	ID: GO:0009745, Biological process: sucrose mediated signaling
+	ID: GO:0009793, Biological process: embryo development ending in seed dormancy
+	ID: GO:0009813, Biological process: flavonoid biosynthetic process
+	ID: GO:0009826, Biological process: unidimensional cell growth
+	ID: GO:0009854, Biological process: oxidative photosynthetic carbon pathway
+	ID: GO:0009855, Biological process: determination of bilateral symmetry
+	ID: GO:0009867, Biological process: jasmonic acid mediated signaling pathway
+	ID: GO:0009880, Biological process: embryonic pattern specification
+	ID: GO:0009909, Biological process: regulation of flower development
+	ID: GO:0009910, Biological process: negative regulation of flower development
+	ID: GO:0009943, Biological process: adaxial/abaxial axis specification
+	ID: GO:0009944, Biological process: polarity specification of adaxial/abaxial axis
+	ID: GO:0009957, Biological process: epidermal cell fate specification
+	ID: GO:0009962, Biological process: regulation of flavonoid biosynthetic process
+	ID: GO:0009963, Biological process: positive regulation of flavonoid biosynthetic process
+	ID: GO:0010014, Biological process: meristem initiation
+	ID: GO:0010016, Biological process: shoot system morphogenesis
+	ID: GO:0010017, Biological process: red or far-red light signaling pathway
+	ID: GO:0010023, Biological process: proanthocyanidin biosynthetic process
+	ID: GO:0010026, Biological process: trichome differentiation
+	ID: GO:0010029, Biological process: regulation of seed germination
+	ID: GO:0010048, Biological process: vernalization response
+	ID: GO:0010072, Biological process: primary shoot apical meristem specification
+	ID: GO:0010073, Biological process: meristem maintenance
+	ID: GO:0010091, Biological process: trichome branching
+	ID: GO:0010100, Biological process: negative regulation of photomorphogenesis
+	ID: GO:0010114, Biological process: response to red light
+	ID: GO:0010119, Biological process: regulation of stomatal movement
+	ID: GO:0010150, Biological process: leaf senescence
+	ID: GO:0010199, Biological process: organ boundary specification between lateral organs and the meristem
+	ID: GO:0010214, Biological process: seed coat development
+	ID: GO:0010218, Biological process: response to far red light
+	ID: GO:0010221, Biological process: negative regulation of vernalization response
+	ID: GO:0010223, Biological process: secondary shoot formation
+	ID: GO:0010224, Biological process: response to UV-B
+	ID: GO:0010227, Biological process: floral organ abscission
+	ID: GO:0010228, Biological process: vegetative to reproductive phase transition of meristem
+	ID: GO:0010311, Biological process: lateral root formation
+	ID: GO:0010371, Biological process: regulation of gibberellin biosynthetic process
+	ID: GO:0010582, Biological process: floral meristem determinacy
+	ID: GO:0010600, Biological process: regulation of auxin biosynthetic process
+	ID: GO:0015031, Biological process: protein transport
+	ID: GO:0015979, Biological process: photosynthesis
+	ID: GO:0016192, Biological process: vesicle-mediated transport
+	ID: GO:0016567, Biological process: protein ubiquitination
+	ID: GO:0017148, Biological process: negative regulation of translation
+	ID: GO:0019430, Biological process: removal of superoxide radicals
+	ID: GO:0019760, Biological process: glucosinolate metabolic process
+	ID: GO:0030154, Biological process: cell differentiation
+	ID: GO:0031347, Biological process: regulation of defense response
+	ID: GO:0031540, Biological process: regulation of anthocyanin biosynthetic process
+	ID: GO:0031542, Biological process: positive regulation of anthocyanin biosynthetic process
+	ID: GO:0032259, Biological process: methylation
+	ID: GO:0032880, Biological process: regulation of protein localization
+	ID: GO:0035017, Biological process: cuticle pattern formation
+	ID: GO:0035998, Biological process: 7,8-dihydroneopterin 3'-triphosphate biosynthetic process
+	ID: GO:0042752, Biological process: regulation of circadian rhythm
+	ID: GO:0042753, Biological process: positive regulation of circadian rhythm
+	ID: GO:0043161, Biological process: proteasome-mediated ubiquitin-dependent protein catabolic process
+	ID: GO:0043433, Biological process: negative regulation of DNA-binding transcription factor activity
+	ID: GO:0045165, Biological process: cell fate commitment
+	ID: GO:0045739, Biological process: positive regulation of DNA repair
+	ID: GO:0045892, Biological process: negative regulation of DNA-templated transcription
+	ID: GO:0045944, Biological process: positive regulation of transcription by RNA polymerase II
+	ID: GO:0046283, Biological process: anthocyanin-containing compound metabolic process
+	ID: GO:0046654, Biological process: tetrahydrofolate biosynthetic process
+	ID: GO:0046854, Biological process: phosphatidylinositol phosphate biosynthetic process
+	ID: GO:0046855, Biological process: inositol phosphate dephosphorylation
+	ID: GO:0048316, Biological process: seed development
+	ID: GO:0048364, Biological process: root development
+	ID: GO:0048366, Biological process: leaf development
+	ID: GO:0048467, Biological process: gynoecium development
+	ID: GO:0048511, Biological process: rhythmic process
+	ID: GO:0048573, Biological process: photoperiodism, flowering
+	ID: GO:0048575, Biological process: short-day photoperiodism, flowering
+	ID: GO:0048638, Biological process: regulation of developmental growth
+	ID: GO:0048825, Biological process: cotyledon development
+	ID: GO:0048826, Biological process: cotyledon morphogenesis
+	ID: GO:0051707, Biological process: response to other organism
+	ID: GO:0060962, Biological process: regulation of ribosomal protein gene transcription by RNA polymerase II
+	ID: GO:0071456, Biological process: cellular response to hypoxia
+	ID: GO:0080060, Biological process: integument development
+	ID: GO:0080086, Biological process: stamen filament development
+	ID: GO:0080127, Biological process: fruit septum development
+	ID: GO:0080191, Biological process: secondary thickening
+	ID: GO:0090470, Biological process: shoot organ boundary specification
+	ID: GO:0090506, Biological process: axillary shoot meristem initiation
+	ID: GO:0098869, Biological process: cellular oxidant detoxification
+	ID: GO:1900056, Biological process: negative regulation of leaf senescence
+	ID: GO:1901957, Biological process: regulation of cutin biosynthetic process
+	ID: GO:2000028, Biological process: regulation of photoperiodism, flowering
+	ID: GO:2000029, Biological process: regulation of proanthocyanidin biosynthetic process
+	ID: GO:2000032, Biological process: regulation of secondary shoot formation
+	ID: GO:2000306, Biological process: positive regulation of photomorphogenesis
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 4
+
+Interactions in Network 4: 
+	AT5G05690 <--> AT3G54130
+
+Out of 2 genes in Network 4, 1 genes are in the gene list: 
+	AT5G05690 
+
+KEGG Pathways for all genes in Network 4: 
+	ID: ath00905, Pathway name: Brassinosteroid biosynthesis
+	ID: ath01100, Pathway name: Metabolic pathways
+	ID: ath01110, Pathway name: Biosynthesis of secondary metabolites
+	ID: ath04141, Pathway name: Protein processing in endoplasmic reticulum
+
+GO Terms associated with the total of all genes in Network 4: 
+	ID: GO:0006468, Biological process: protein phosphorylation
+	ID: GO:0008202, Biological process: steroid metabolic process
+	ID: GO:0009808, Biological process: lignin metabolic process
+	ID: GO:0009826, Biological process: unidimensional cell growth
+	ID: GO:0009834, Biological process: plant-type secondary cell wall biogenesis
+	ID: GO:0009911, Biological process: positive regulation of flower development
+	ID: GO:0010224, Biological process: response to UV-B
+	ID: GO:0010268, Biological process: brassinosteroid homeostasis
+	ID: GO:0010584, Biological process: pollen exine formation
+	ID: GO:0016125, Biological process: sterol metabolic process
+	ID: GO:0016132, Biological process: brassinosteroid biosynthetic process
+	ID: GO:0016579, Biological process: protein deubiquitination
+	ID: GO:0048657, Biological process: anther wall tapetum cell differentiation
+	ID: GO:0050896, Biological process: response to stimulus
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 5
+
+Interactions in Network 5: 
+	AT4G22890 <--> AT1G60950
+
+Out of 2 genes in Network 5, 1 genes are in the gene list: 
+	AT4G22890 
+
+KEGG Pathways for all genes in Network 5: 
+	ID: ath00195, Pathway name: Photosynthesis
+	ID: ath01100, Pathway name: Metabolic pathways
+
+GO Terms associated with the total of all genes in Network 5: 
+	ID: GO:0009643, Biological process: photosynthetic acclimation
+	ID: GO:0009767, Biological process: photosynthetic electron transport chain
+	ID: GO:0009773, Biological process: photosynthetic electron transport in photosystem I
+	ID: GO:0009853, Biological process: photorespiration
+	ID: GO:0019253, Biological process: reductive pentose-phosphate cycle
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 6
+
+Interactions in Network 6: 
+	AT4G19170 <--> AT5G17790
+
+Out of 2 genes in Network 6, 1 genes are in the gene list: 
+	AT4G19170 
+
+KEGG Pathways for all genes in Network 6: 
+	ID: ath00906, Pathway name: Carotenoid biosynthesis
+	ID: ath01100, Pathway name: Metabolic pathways
+	ID: ath01110, Pathway name: Biosynthesis of secondary metabolites
+
+GO Terms associated with the total of all genes in Network 6: 
+	ID: GO:0006397, Biological process: mRNA processing
+	ID: GO:0009658, Biological process: chloroplast organization
+	ID: GO:0009733, Biological process: response to auxin
+	ID: GO:0016121, Biological process: carotene catabolic process
+	ID: GO:1900871, Biological process: chloroplast mRNA modification
+	ID: GO:1901811, Biological process: beta-carotene catabolic process
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 7
+
+Interactions in Network 7: 
+	AT1G54040 <--> AT4G23810
+
+Out of 2 genes in Network 7, 1 genes are in the gene list: 
+	AT1G54040 
+
+There are no KEGG Pathways annotated for any of the genes in Network 7: 
+
+GO Terms associated with the total of all genes in Network 7: 
+	ID: GO:0006367, Biological process: transcription initiation at RNA polymerase II promoter
+	ID: GO:0009617, Biological process: response to bacterium
+	ID: GO:0009751, Biological process: response to salicylic acid
+	ID: GO:0009753, Biological process: response to jasmonic acid
+	ID: GO:0010150, Biological process: leaf senescence
+	ID: GO:0010193, Biological process: response to ozone
+	ID: GO:0019762, Biological process: glucosinolate catabolic process
+	ID: GO:0031347, Biological process: regulation of defense response
+	ID: GO:0042542, Biological process: response to hydrogen peroxide
+	ID: GO:0042742, Biological process: defense response to bacterium
+	ID: GO:0045893, Biological process: positive regulation of DNA-templated transcription
+	ID: GO:0080028, Biological process: nitrile biosynthetic process
+	ID: GO:2000022, Biological process: regulation of jasmonic acid mediated signaling pathway
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 8
+
+Interactions in Network 8: 
+	AT3G48360 <--> AT4G09570
+
+Out of 2 genes in Network 8, 1 genes are in the gene list: 
+	AT3G48360 
+
+KEGG Pathways for all genes in Network 8: 
+	ID: ath04626, Pathway name: Plant-pathogen interaction
+
+GO Terms associated with the total of all genes in Network 8: 
+	ID: GO:0006355, Biological process: regulation of DNA-templated transcription
+	ID: GO:0006468, Biological process: protein phosphorylation
+	ID: GO:0006950, Biological process: response to stress
+	ID: GO:0007623, Biological process: circadian rhythm
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009553, Biological process: embryo sac development
+	ID: GO:0009555, Biological process: pollen development
+	ID: GO:0009611, Biological process: response to wounding
+	ID: GO:0009651, Biological process: response to salt stress
+	ID: GO:0009733, Biological process: response to auxin
+	ID: GO:0009734, Biological process: auxin-activated signaling pathway
+	ID: GO:0009737, Biological process: response to abscisic acid
+	ID: GO:0009738, Biological process: abscisic acid-activated signaling pathway
+	ID: GO:0009743, Biological process: response to carbohydrate
+	ID: GO:0009751, Biological process: response to salicylic acid
+	ID: GO:0009753, Biological process: response to jasmonic acid
+	ID: GO:0009789, Biological process: positive regulation of abscisic acid-activated signaling pathway
+	ID: GO:0010167, Biological process: response to nitrate
+	ID: GO:0010182, Biological process: sugar mediated signaling pathway
+	ID: GO:0016567, Biological process: protein ubiquitination
+	ID: GO:0018105, Biological process: peptidyl-serine phosphorylation
+	ID: GO:0035556, Biological process: intracellular signal transduction
+	ID: GO:0042221, Biological process: response to chemical
+	ID: GO:0042542, Biological process: response to hydrogen peroxide
+	ID: GO:0046777, Biological process: protein autophosphorylation
+	ID: GO:0051973, Biological process: positive regulation of telomerase activity
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 9
+
+Interactions in Network 9: 
+	AT2G43010 <--> AT1G09530
+	AT2G43010 <--> AT2G18790
+	AT2G43010 <--> AT1G09570
+
+Out of 4 genes in Network 9, 1 genes are in the gene list: 
+	AT2G43010 
+
+KEGG Pathways for all genes in Network 9: 
+	ID: ath04075, Pathway name: Plant hormone signal transduction
+	ID: ath04712, Pathway name: Circadian rhythm - plant
+
+GO Terms associated with the total of all genes in Network 9: 
+	ID: GO:0006325, Biological process: chromatin organization
+	ID: GO:0006355, Biological process: regulation of DNA-templated transcription
+	ID: GO:0006412, Biological process: translation
+	ID: GO:0009266, Biological process: response to temperature stimulus
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009584, Biological process: detection of visible light
+	ID: GO:0009585, Biological process: red, far-red light phototransduction
+	ID: GO:0009630, Biological process: gravitropism
+	ID: GO:0009638, Biological process: phototropism
+	ID: GO:0009639, Biological process: response to red or far red light
+	ID: GO:0009640, Biological process: photomorphogenesis
+	ID: GO:0009649, Biological process: entrainment of circadian clock
+	ID: GO:0009687, Biological process: abscisic acid metabolic process
+	ID: GO:0009704, Biological process: de-etiolation
+	ID: GO:0009740, Biological process: gibberellic acid mediated signaling pathway
+	ID: GO:0009826, Biological process: unidimensional cell growth
+	ID: GO:0009867, Biological process: jasmonic acid mediated signaling pathway
+	ID: GO:0010017, Biological process: red or far-red light signaling pathway
+	ID: GO:0010029, Biological process: regulation of seed germination
+	ID: GO:0010148, Biological process: transpiration
+	ID: GO:0010161, Biological process: red light signaling pathway
+	ID: GO:0010201, Biological process: response to continuous far red light stimulus by the high-irradiance response system
+	ID: GO:0010202, Biological process: response to low fluence red light stimulus
+	ID: GO:0010203, Biological process: response to very low fluence red light stimulus
+	ID: GO:0010218, Biological process: response to far red light
+	ID: GO:0010244, Biological process: response to low fluence blue light stimulus by blue low-fluence system
+	ID: GO:0010374, Biological process: stomatal complex development
+	ID: GO:0010600, Biological process: regulation of auxin biosynthetic process
+	ID: GO:0010617, Biological process: circadian regulation of calcium ion oscillation
+	ID: GO:0010928, Biological process: regulation of auxin mediated signaling pathway
+	ID: GO:0015979, Biological process: photosynthesis
+	ID: GO:0017006, Biological process: protein-tetrapyrrole linkage
+	ID: GO:0017012, Biological process: protein-phytochromobilin linkage
+	ID: GO:0017148, Biological process: negative regulation of translation
+	ID: GO:0031347, Biological process: regulation of defense response
+	ID: GO:0031539, Biological process: positive regulation of anthocyanin metabolic process
+	ID: GO:0042548, Biological process: regulation of photosynthesis, light reaction
+	ID: GO:0045892, Biological process: negative regulation of DNA-templated transcription
+	ID: GO:0046685, Biological process: response to arsenic-containing substance
+	ID: GO:0060320, Biological process: rejection of self pollen
+	ID: GO:1905421, Biological process: regulation of plant organ morphogenesis
+	ID: GO:1990785, Biological process: response to water-immersion restraint stress
+	ID: GO:2000028, Biological process: regulation of photoperiodism, flowering
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 10
+
+Interactions in Network 10: 
+	AT3G45780 <--> AT5G64330
+
+Out of 2 genes in Network 10, 1 genes are in the gene list: 
+	AT3G45780 
+
+There are no KEGG Pathways annotated for any of the genes in Network 10: 
+
+GO Terms associated with the total of all genes in Network 10: 
+	ID: GO:0006468, Biological process: protein phosphorylation
+	ID: GO:0006470, Biological process: protein dephosphorylation
+	ID: GO:0007165, Biological process: signal transduction
+	ID: GO:0007623, Biological process: circadian rhythm
+	ID: GO:0009637, Biological process: response to blue light
+	ID: GO:0009638, Biological process: phototropism
+	ID: GO:0009785, Biological process: blue light signaling pathway
+	ID: GO:0009903, Biological process: chloroplast avoidance movement
+	ID: GO:0009904, Biological process: chloroplast accumulation movement
+	ID: GO:0010119, Biological process: regulation of stomatal movement
+	ID: GO:0010155, Biological process: regulation of proton transport
+	ID: GO:0010362, Biological process: negative regulation of anion channel activity by blue light
+	ID: GO:0016567, Biological process: protein ubiquitination
+	ID: GO:0046777, Biological process: protein autophosphorylation
+	ID: GO:0097428, Biological process: protein maturation by iron-sulfur cluster transfer
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 11
+
+Interactions in Network 11: 
+	AT3G62410 <--> AT3G26650
+
+Out of 2 genes in Network 11, 1 genes are in the gene list: 
+	AT3G62410 
+
+KEGG Pathways for all genes in Network 11: 
+	ID: ath00710, Pathway name: Carbon fixation in photosynthetic organisms
+	ID: ath01100, Pathway name: Metabolic pathways
+	ID: ath01200, Pathway name: Carbon metabolism
+
+GO Terms associated with the total of all genes in Network 11: 
+	ID: GO:0006006, Biological process: glucose metabolic process
+	ID: GO:0009409, Biological process: response to cold
+	ID: GO:0009416, Biological process: response to light stimulus
+	ID: GO:0009744, Biological process: response to sucrose
+	ID: GO:0018316, Biological process: peptide cross-linking via L-cystine
+	ID: GO:0019253, Biological process: reductive pentose-phosphate cycle
+	ID: GO:0034605, Biological process: cellular response to heat
+	ID: GO:0051289, Biological process: protein homotetramerization
+	ID: GO:0065003, Biological process: protein-containing complex assembly
+	ID: GO:0070417, Biological process: cellular response to cold
+	ID: GO:0071454, Biological process: cellular response to anoxia
+	ID: GO:0080153, Biological process: negative regulation of reductive pentose-phosphate cycle
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 12
+
+Interactions in Network 12: 
+	AT3G61260 <--> AT3G48040
+	AT3G61260 <--> AT3G17210
+	AT3G61260 <--> AT3G55440
+
+Out of 4 genes in Network 12, 1 genes are in the gene list: 
+	AT3G61260 
+
+KEGG Pathways for all genes in Network 12: 
+	ID: ath00010, Pathway name: Glycolysis / Gluconeogenesis
+	ID: ath00051, Pathway name: Fructose and mannose metabolism
+	ID: ath00562, Pathway name: Inositol phosphate metabolism
+	ID: ath00710, Pathway name: Carbon fixation in photosynthetic organisms
+	ID: ath01100, Pathway name: Metabolic pathways
+	ID: ath01110, Pathway name: Biosynthesis of secondary metabolites
+	ID: ath01200, Pathway name: Carbon metabolism
+	ID: ath01230, Pathway name: Biosynthesis of amino acids
+	ID: ath04145, Pathway name: Phagosome
+
+GO Terms associated with the total of all genes in Network 12: 
+	ID: GO:0006094, Biological process: gluconeogenesis
+	ID: GO:0006096, Biological process: glycolytic process
+	ID: GO:0007015, Biological process: actin filament organization
+	ID: GO:0007163, Biological process: establishment or maintenance of cell polarity
+	ID: GO:0007264, Biological process: small GTPase mediated signal transduction
+	ID: GO:0008360, Biological process: regulation of cell shape
+	ID: GO:0009738, Biological process: abscisic acid-activated signaling pathway
+	ID: GO:0009751, Biological process: response to salicylic acid
+	ID: GO:0009788, Biological process: negative regulation of abscisic acid-activated signaling pathway
+	ID: GO:0009865, Biological process: pollen tube adhesion
+	ID: GO:0010043, Biological process: response to zinc ion
+	ID: GO:0019563, Biological process: glycerol catabolic process
+	ID: GO:0030865, Biological process: cortical cytoskeleton organization
+	ID: GO:0032956, Biological process: regulation of actin cytoskeleton organization
+	ID: GO:0042742, Biological process: defense response to bacterium
+	ID: GO:0044262, Biological process: cellular carbohydrate metabolic process
+	ID: GO:0046166, Biological process: glyceraldehyde-3-phosphate biosynthetic process
+	ID: GO:0050832, Biological process: defense response to fungus
+	ID: GO:0051607, Biological process: defense response to virus
+	ID: GO:0051665, Biological process: membrane raft localization
+	ID: GO:1901700, Biological process: response to oxygen-containing compound
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 13
+
+Interactions in Network 13: 
+	AT4G39710 <--> AT4G03280
+
+Out of 2 genes in Network 13, 1 genes are in the gene list: 
+	AT4G39710 
+
+KEGG Pathways for all genes in Network 13: 
+	ID: ath00195, Pathway name: Photosynthesis
+	ID: ath01100, Pathway name: Metabolic pathways
+
+GO Terms associated with the total of all genes in Network 13: 
+	ID: GO:0006468, Biological process: protein phosphorylation
+	ID: GO:0009767, Biological process: photosynthetic electron transport chain
+	ID: GO:0010196, Biological process: nonphotochemical quenching
+
+----------------------------------------------------------------------------------------------------------------------
+
+NETWORK 14
+
+Interactions in Network 14: 
+	AT3G62550 <--> AT1G25490
+	AT3G62550 <--> AT4G32010
+
+Out of 3 genes in Network 14, 1 genes are in the gene list: 
+	AT3G62550 
+
+KEGG Pathways for all genes in Network 14: 
+	ID: ath03015, Pathway name: mRNA surveillance pathway
+
+GO Terms associated with the total of all genes in Network 14: 
+	ID: GO:0006355, Biological process: regulation of DNA-templated transcription
+	ID: GO:0006470, Biological process: protein dephosphorylation
+	ID: GO:0006952, Biological process: defense response
+	ID: GO:0009723, Biological process: response to ethylene
+	ID: GO:0009734, Biological process: auxin-activated signaling pathway
+	ID: GO:0009738, Biological process: abscisic acid-activated signaling pathway
+	ID: GO:0009789, Biological process: positive regulation of abscisic acid-activated signaling pathway
+	ID: GO:0009873, Biological process: ethylene-activated signaling pathway
+	ID: GO:0009926, Biological process: auxin polar transport
+	ID: GO:0010119, Biological process: regulation of stomatal movement
+	ID: GO:0035304, Biological process: regulation of protein dephosphorylation
+	ID: GO:0045944, Biological process: positive regulation of transcription by RNA polymerase II
+
+----------------------------------------------------------------------------------------------------------------------
+
