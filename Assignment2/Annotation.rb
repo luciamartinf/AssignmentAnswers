@@ -12,10 +12,8 @@ require 'json'
 #
 class Annotation
     
-    # Class method fetch to access an URL via code, donated by Mark Wilkinson.
-
     #
-    # Access an URL, function donated by Mark Wilkinson.
+    # Class method fetch to access an URL via code, donated by Mark Wilkinson.
     #
     # @param [String] url URL
     # @param [String] headers headers
@@ -50,7 +48,7 @@ class Annotation
     end 
 
     #
-    # Given a gene id, returns its KEGG annotations (KEGG ID and KEGG pathway) in a hash
+    # Class method to return the KEGG annotations (KEGG ID and KEGG pathway) in a hash for a given gene id
     #
     # @param [string] gene id as a String
     # @return [kegg_hash] KEGG annotations of a gene as Hash
@@ -70,7 +68,7 @@ class Annotation
     end
 
     #
-    # Given a gene id, returns its GO annotations (GO ID and Biological function) in a hash
+    # Class method to return the GO annotations (GO ID and Biological function) in a hash for a given gene id
     #
     # @param [string] gene id as String
     # @return [go_hash] go annotations of a gene as Hash
