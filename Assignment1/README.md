@@ -50,7 +50,7 @@ Class for File Management. Methods defined:
 
 ### DATA CLASSES  
 
-A class has bn defined for each of the 3 given data files with the following common methods:
+A class has been defined for each of the 3 given data files with the following common methods:
 
 - `initialize`: Definition of initialize method
 - `new_from_hash`: Class method to create an instance from hash
