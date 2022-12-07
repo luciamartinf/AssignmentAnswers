@@ -50,7 +50,7 @@ class Annotation
     #
     # Class method to return the KEGG annotations (KEGG ID and KEGG pathway) in a hash for a given gene id
     #
-    # @param [string] gene id as a String
+    # @param gene_id [string] gene id as a String
     # @return [kegg_hash] KEGG annotations of a gene as Hash
     #
     def Annotation.kegg_annotation(gene_id)
@@ -70,7 +70,7 @@ class Annotation
     #
     # Class method to return the GO annotations (GO ID and Biological function) in a hash for a given gene id
     #
-    # @param [string] gene id as String
+    # @param gene_id [string] gene id as String
     # @return [go_hash] go annotations of a gene as Hash
     #
     def Annotation.go_annotation(gene_id)
