@@ -16,7 +16,7 @@ class FileMaster
     @@genelist = []
 
     #
-    # Read genelist file and create an array withall the genes
+    # Class method to read genelist file and create an array withall the genes
     #
     # @param filename [String] the name of the file cointaiing the gene list as a String
     # @return [Array<String>] the gene list
@@ -34,7 +34,7 @@ class FileMaster
     end
 
     #
-    # Write report with all the information about the Interaction Networks
+    # Class method to write report with all the information about the Interaction Networks
     #
     # @param filename [String] the name of the file that is going to store the report information as String
     # @param networks_object [Array<Object>] the list of all networks objects as an Array
