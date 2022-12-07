@@ -37,7 +37,7 @@ class FileMaster
     # Class method to write report with all the information about the Interaction Networks
     #
     # @param filename [String] the name of the file that is going to store the report information as String
-    # @param networks_object [Array<Object>] the list of all networks objects as an Array
+    # @param networks_objects [Array<Object>] the list of all networks objects as an Array
     #
     def self.generate_report(filename, networks_objects)
         
