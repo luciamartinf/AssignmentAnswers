@@ -8,16 +8,16 @@ Assignment 3 for the Bioinformatics Programming Challenges course from the Maste
 
 `USAGE main.rb ArabidopsisSubNetwork_GeneList.txt`
 
-All the files needed to run the script and the ones generated are contained in this github repository and detailed below.
+#### Files 
 
-#### Arguments
+All the files needed to run the script and the ones generated are contained in this github repository and detailed below. 
 
-| **Argument**                           | **Description**                                                                                                 |                                                   
+| **Files**                           | **Description**                                                                                                 |                                                   
 |:----------------------------------------|:----------------------------------------------------------------------------------------------------------------|
 |`ArabidopsisSubNetwork_GeneList.txt`                                |  txt file stored. Contains a list of Arabidopsis Thaliana co-expressed genes                          |                  
-|`GFF_genes.gff3`                                  | New GFF3 file. Report generated that contains all Interaction Networks involving genes from the list with its GO and KEGG annotations                  |                                                               
-|`GFF_chr.gff3`                                  | New GFF3 file. Report generated that contains all Interaction Networks involving genes from the list with its GO and KEGG annotations                  |   
-|`no_CTTCTT_genes_report.txt`                                  | New txt file. Report generated that contains all Interaction Networks involving genes from the list with its GO and KEGG annotations                  |     
+|`GFF_genes.gff3`                                  | New GFF3 file. GFF3 report that contains all the CTTCTT regions found in the genes from the list. The coordinates are relative to the gene.                 |                                                               
+|`GFF_chr.gff3`                                  | New GFF3 file. GFF3 report that contains all the CTTCTT regions found in the genes from the list. The coordinates are relative to the chromosome.                |   
+|`no_CTTCTT_genes_report.txt`                                  | New txt file. Report that contains all the genes that don't contain any CTTCTT region in any of their exons                 |     
 
 ## SOURCE FILES
 
@@ -26,8 +26,8 @@ All the files needed to run the script and the ones generated are contained in t
 The following tasks are performed:
 
 -   Reads the genelist file with Arabidopsis Thaliana genes and stores them in an Array
--   Finds all Interaction Networks involving genes from the genelist
--   Creates a file called report.txt to store all the information about the Interaction Networks
+-   Creates a Seq object and gets all the useful information for each gene in the genelist file 
+-   Genereates the files previously mentioned
 
 ### FileMaster.rb
 
@@ -35,19 +35,24 @@ Class for File Management. Methods defined:
 
 - `get_genelist_from_file`: Class method to read genelist file and create an array withall the genes
 - `fetch`: Class method fetch to access an URL via code, donated by Mark Wilkinson.
-- `generate_report`: Class method to write report with all the information about the Interaction Networks
+- `generate_no_report`: Class method to write report with all the genes that don't contain any CTTCTT region in any of their exons
+- `generate_gff3_report: Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. The coordinates are relative to the gene.
+- `generate_gff3_report_chr`: Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. The coordinates are relative to the chromosome.
 
 ### Seq.rb 
 
-- `initialize`: Definition of initialize method
-- `get_interaction`: Instance method to get interactions of a given gene
-- `create_network`: Instance method to create an interaction network starting with a gene id using a recursive function
-- `get_genes_network`: Instance method to get all genes in the network as a simple Array
-- `get_genes_from_genelist`: Instance method to get all genes in the network that are also in the gene list as a simple Array
-- `get_annotation`: Instance method to get GO and KEGG annotations for all genes in the network
+Class to represent all of the information associated with a gene. Methods defined:
 
-### Annotation.rb
+- `initialize`: Definition of initialize method.
+- `get_no_genes`: Class method to get the the class variable @@no_cttctt_genes.
+- `get_bio`: Instance method to obtain information for the current genes.
+- `get_coords_chr`: Instance method to obtain the chromose number and the chromosome relative coordinates of the gene
+- `add_new_feature`: Instance method to create new CTTCTT_region feature and add it to the Bio::Sequence object @sequence.
+- `match_exons`: Instance method to find every CTTCTT region in the exons of the current gene on both the + and - strands, adds a new feature to its @sequence and updates @@no_cttctt_genes array
 
-- `fetch`: Class method fetch to access an URL via code, donated by Mark Wilkinson.
-- `kegg_annotations`: Class method to return the KEGG annotations (KEGG ID and KEGG pathway) in a hash for a given gene id
-- `go_annotations`: Class method to return the GO annotations (GO ID and Biological function) in a hash for a given gene id
+
+## Other files in this repository
+
+- Ruby scripts are commented with YARD and respective documentation can be found in this repository. 
+- `Image1`: Screenshot of the EnsemblPlants webpage for the AT2G46340 gene zoomed in in Chromosome 2 19027247-19027302 region showing the CTTCTT regions can also be found in this repository. 
+- `Image2`: Screenshot of the EnsemblPlants webpage for the AT2G46340 gene zoomed in in Chromosome 2 19027016-19027468 region showing the CTTCTT regions can also be found in this repository. 
