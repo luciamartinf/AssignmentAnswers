@@ -8,7 +8,7 @@ Assignment 3 for the Bioinformatics Programming Challenges course from the Maste
 
 `USAGE main.rb ArabidopsisSubNetwork_GeneList.txt`
 
-#### Files 
+## Files 
 
 All the files needed to run the script and the ones generated are contained in this github repository and detailed below. 
 
