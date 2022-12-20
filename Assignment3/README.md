@@ -19,7 +19,7 @@ All the files needed to run the script and the ones generated are contained in t
 |`GFF_chr.gff3`                                  | New GFF3 file. GFF3 report that contains all the CTTCTT regions found in the genes from the list. The coordinates are relative to the chromosome.                |   
 |`no_CTTCTT_genes_report.txt`                                  | New txt file. Report that contains all the genes that don't contain any CTTCTT region in any of their exons                 |     
 
-## SOURCE FILES
+## Source Files
 
 ### main.rb
 
