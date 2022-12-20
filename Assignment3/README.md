@@ -36,7 +36,7 @@ Class for File Management. Methods defined:
 - `get_genelist_from_file`: Class method to read genelist file and create an array withall the genes
 - `fetch`: Class method fetch to access an URL via code, donated by Mark Wilkinson.
 - `generate_no_report`: Class method to write report with all the genes that don't contain any CTTCTT region in any of their exons
-- `generate_gff3_report: Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. The coordinates are relative to the gene.
+- `generate_gff3_report`: Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. The coordinates are relative to the gene.
 - `generate_gff3_report_chr`: Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. The coordinates are relative to the chromosome.
 
 ### Seq.rb 
