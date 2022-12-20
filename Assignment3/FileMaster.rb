@@ -153,7 +153,7 @@ class FileMaster
 
     #
     # Class method to write GFF3 report with all the CTTCTT regions found in the genes from the list. 
-    # The coordinates are absolute as they take the chromosome as reference.
+    # The coordinates are relative to the chromosome.
     #
     # @param seq_objects [Array<Object>] the list of all Seq objects as an Array. 
     # Creates a GFF3 report file of the CTTCTT regions with chromosome related coordinates.

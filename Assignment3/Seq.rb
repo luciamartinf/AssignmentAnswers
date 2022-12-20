@@ -63,7 +63,7 @@ class Seq
     end
 
     #
-    # Function to get the the class variable @@no_cttctt_genes
+    # Class method to get the the class variable @@no_cttctt_genes
     #
     # @return [Array<String>] The Array with all of the gene id that don't have any cttctt repeat in their exons
     #
@@ -74,7 +74,7 @@ class Seq
     end
 
     #
-    # Obtains information for the current genes.
+    # Instance method to obtain information for the current genes.
     #
     # Takes the instance atribute @id and 
     # saves the [Bio::EMBL] and [Bio::Sequence] created objects in its respective instance atributes @embl and @sequence
@@ -91,7 +91,7 @@ class Seq
     end
 
     #
-    # Obtains the chromose number and the chromosome relative coordinates of the gene
+    # Instance method to obtain the chromose number and the chromosome relative coordinates of the gene
     #
     # Takes the @embl instance variable and 
     # saves the chromosome number and chromosome relative coordinates of the gene 
@@ -114,7 +114,7 @@ class Seq
     end
 
     #
-    # Create new CTTCTT_region feature and add it to the Bio::Sequence object @sequence
+    # Instance method to create new CTTCTT_region feature and add it to the Bio::Sequence object @sequence
     #
     # @param [String] strand "+" for forward strand, "-" for the reverse strand
     # @param [String] position_s string that stores the repeat position as "start_pos..end_pos"
@@ -134,7 +134,7 @@ class Seq
     end
 
     #
-    # Finds every CTTCTT region in the exons of the current gene on both the + and - strands, 
+    # Instance method to find every CTTCTT region in the exons of the current gene on both the + and - strands, 
     # adds a new feature to its @sequence and updates @@no_cttctt_genes array
     #
     # Takes the @embl [Bio::EMBL] instance variable and 
