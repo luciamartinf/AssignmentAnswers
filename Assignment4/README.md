@@ -32,7 +32,7 @@ The following tasks are performed:
 -   Find Best Reciprocal Hits
 -   Writes report
 
-### Seq.rb 
+### BlastFun.rb 
 
 Class to represent all of the information associated with a gene. Methods defined:
 
