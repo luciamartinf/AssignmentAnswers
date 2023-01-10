@@ -51,11 +51,11 @@ Class to represent all of the information associated with a gene. Methods define
 
 ## Further notes
 
-### Best Reciprocal Hits parameters
+#### Best Reciprocal Hits parameters
 
 - To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient [1]
 
-### What's next? 
+#### What's next? 
 
 - Two genes are orthologs if their last common ascestor in the tree was a speciation event. Thus, to confirm orthology, by analyzing the phylogenetic trees (i.e. using tree reconciliation algorithms) it is possible to derive a collection of fine-grained predictions of all orthology relationship among sequences [2]. 
 
