@@ -66,7 +66,7 @@ Class to represent all of the information associated with a gene. Methods define
 
 ## References
 
-[1] Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, *Bioinformatics, Volume 24, Issue 3*, 1 February 2008, Pages 319-324, https://doi.org/10.1093/bioinformatics/btm585
+[1] Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, *Bioinformatics, Volume 24, Issue 3*, 1 February 2008, Pages 319-324, doi: 10.1093/bioinformatics/btm585
 
 [2] Setubal JC, Stadler PF. Gene Phylogenies and Orthologous Groups. *Methods Mol Biol*. 2018;1704:1-28. doi: 10.1007/978-1-4939-7463-4_1. PMID: 29277861.
 
