@@ -6,7 +6,7 @@ Assignment 3 for the Bioinformatics Programming Challenges course from the Maste
 
 ## USAGE:
 
-`USAGE main.rb ArabidopsisSubNetwork_GeneList.txt`
+`USAGE ruby main.rb ArabidopsisSubNetwork_GeneList.txt`
 
 ## Files 
 
