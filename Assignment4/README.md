@@ -1,12 +1,12 @@
-# Assigment 3 - GFF feature files and visualization
+# Assigment 3 - Searching for Orthologues
 
 ### Lucía Martín Fernández
 
-Assignment 3 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
+Assignment 4 for the Bioinformatics Programming Challenges course from the Master in Computational Biology at Universidad Politécnica de Madrid.
 
 ## USAGE:
 
-`USAGE main.rb ArabidopsisSubNetwork_GeneList.txt`
+`USAGE ruby main.rb arabidopsis.fa spombe.fa`
 
 ## Files 
 
