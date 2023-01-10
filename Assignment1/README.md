@@ -6,7 +6,7 @@ Assignment 1 for the Bioinformatics Programming Challenges course from the Maste
 
 ## USAGE:
 
-`usage: main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
+`usage: ruby main.rb gene_information.tsv seed_stock_data.tsv cross_data.tsv new_stock_data.tsv`
 
 All the files needed to run the script ar contained in this github repository and detailed below
 
