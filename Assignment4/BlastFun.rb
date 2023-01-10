@@ -122,6 +122,7 @@ class BlastFun
         end
 
         return factory1, factory2
+
     end
     
     # 
