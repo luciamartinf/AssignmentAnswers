@@ -189,7 +189,7 @@ class BlastFun
 
         open(report, "w") do |f|
             
-            f.puts "#{basename1}\t#{basename2}" # heading
+            f.puts "#{basename2}\t#{basename1}" # heading
 
             @@reciprocal_hits.each do |seq1, seq2|
                 f.puts("#{seq1}\t#{seq2}")

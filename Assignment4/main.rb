@@ -2,7 +2,7 @@ require './BlastFun'
 
 $stderr.reopen(File.new('/dev/null','w')) # redirect standard error output
 
-# USAGE main.rb arabidopsis.fa spombe.fa
+# USAGE main.rb AThaliana.fa SPombe.fa
 file1, file2 = ARGV
 
 # Make blast databases from files
