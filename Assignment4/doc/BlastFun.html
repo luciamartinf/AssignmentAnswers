@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: BlastFun
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "BlastFun";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (B)</a> &raquo;
+    
+    
+    <span class="title">BlastFun</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: BlastFun
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">BlastFun</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>BlastFun.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<h2 id="label-BlastFun">BlastFun</h2>
+
+<p>Class to write a best reciprocal hits report</p>
+
+<p>Contains the functions to get the sequence type of a fasta file, make a blast database, build blast factories,  find the best reciprocal hits and write a report about them</p>
+
+<h2 id="label-Summary">Summary</h2>
+
+<p>This class contains all the necessary functions to find reciprocal best hits using blast</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="all_blastdb-classvariable" class="">@@all_blastdb =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Class variable [Array&lt;Array&lt;String&gt;&gt;]  Is an array of arrays with the structure: [ database_path, database_basename, fasta_type, genome_filename ]</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="reciprocal_hits-classvariable" class="">@@reciprocal_hits =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Class variable [Array&lt;Array&lt;Symbol&gt;&gt;]  Is an array of arrays that contains all the pairs of best reciprocal hits found</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='rbracket'>]</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_factories-class_method" title="build_factories (class method)">.<strong>build_factories</strong>(evalue = &quot;1e-6&quot;, filter_algor = &quot;m S&quot;)  &#x21d2; Bio::Blast </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to build local blast factories.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_reciprocal_hits-class_method" title="find_reciprocal_hits (class method)">.<strong>find_reciprocal_hits</strong>(factory1, factory2, file_1, file_2, coverage = 0.5)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to find the best reciprocal hits between 2 files.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_all_blastdb-class_method" title="get_all_blastdb (class method)">.<strong>get_all_blastdb</strong>  &#x21d2; Array&lt;Array&lt;String&gt;&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to get the class variable @@all_blastdb.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_fasta_type-class_method" title="get_fasta_type (class method)">.<strong>get_fasta_type</strong>(filename)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to define the sequence type of a fasta file.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_reciprocal_hits-class_method" title="get_reciprocal_hits (class method)">.<strong>get_reciprocal_hits</strong>  &#x21d2; Array&lt;Array&lt;Symbol&gt;&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to get the class variable @@reciprocal_hits.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#make_blast_database-class_method" title="make_blast_database (class method)">.<strong>make_blast_database</strong>(filename)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Class method to make blast database from a fasta file.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_report-class_method" title="write_report (class method)">.<strong>write_report</strong>(report = &quot;reciprocal_hits_report.tsv&quot;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Writes a .tsv format report with the best reciprocal hits.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="build_factories-class_method">
+  
+    .<strong>build_factories</strong>(evalue = &quot;1e-6&quot;, filter_algor = &quot;m S&quot;)  &#x21d2; <tt>Bio::Blast</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to build local blast factories</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>evalue</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&quot;1e-6&quot;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>evalue threshold number as string. Optional, default is “1e-6”</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>filter_algor</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&quot;m S&quot;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the filter algorithm to use. Optional, default is “m S”</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Bio::Blast</tt>, <tt>Bio::Blast</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>factories</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 97</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_build_factories'>build_factories</span><span class='lparen'>(</span><span class='id identifier rubyid_evalue'>evalue</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1e-6</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_filter_algor'>filter_algor</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>m S</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># default values from https://doi.org/10.1093/bioinformatics/btm585
+</span>
+    <span class='id identifier rubyid_path_db1'>path_db1</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_type_db1'>type_db1</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span>
+
+    <span class='id identifier rubyid_path_db2'>path_db2</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_type_db2'>type_db2</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span>
+
+    <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>-e </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_evalue'>evalue</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='embexpr_end'>}</span><span class='tstring_content'> -F </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_filter_algor'>filter_algor</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='comment'># write arguments line
+</span>
+    <span class='comment'># Depending on the sequence types of the fasta files, the factories will be created using different blast types
+</span>    <span class='kw'>if</span> <span class='id identifier rubyid_type_db1'>type_db1</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prot</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_type_db2'>type_db2</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prot</span><span class='tstring_end'>&#39;</span></span>
+        <span class='id identifier rubyid_factory1'>factory1</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db1'>path_db1</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+        <span class='id identifier rubyid_factory2'>factory2</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastp</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db2'>path_db2</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_type_db1'>type_db1</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nucl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_type_db2'>type_db2</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nucl</span><span class='tstring_end'>&#39;</span></span>
+        <span class='id identifier rubyid_factory1'>factory1</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastn</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db1'>path_db1</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+        <span class='id identifier rubyid_factory2'>factory2</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastn</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db2'>path_db2</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_type_db1'>type_db1</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nucl</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_type_db2'>type_db2</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prot</span><span class='tstring_end'>&#39;</span></span>
+        <span class='id identifier rubyid_factory1'>factory1</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tblastn</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db1'>path_db1</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+        <span class='id identifier rubyid_factory2'>factory2</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastx</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db2'>path_db2</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_type_db1'>type_db1</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prot</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_type_db2'>type_db2</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nucl</span><span class='tstring_end'>&#39;</span></span>
+        <span class='id identifier rubyid_factory1'>factory1</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>blastx</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db1'>path_db1</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+        <span class='id identifier rubyid_factory2'>factory2</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Blast</span><span class='period'>.</span><span class='id identifier rubyid_local'>local</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tblastn</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_path_db2'>path_db2</span><span class='comma'>,</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='rparen'>)</span> 
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_abort'>abort</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Not supported database types combination </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_type_db1'>type_db1</span><span class='embexpr_end'>}</span><span class='tstring_content'> and </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_type_db2'>type_db2</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_factory1'>factory1</span><span class='comma'>,</span> <span class='id identifier rubyid_factory2'>factory2</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_reciprocal_hits-class_method">
+  
+    .<strong>find_reciprocal_hits</strong>(factory1, factory2, file_1, file_2, coverage = 0.5)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to find the best reciprocal hits between 2 files</p>
+
+<p>Updates the @@reciprocal_hits array</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>factory1</span>
+      
+      
+        <span class='type'>(<tt>Bio::Blast</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>factory2</span>
+      
+      
+        <span class='type'>(<tt>Bio::Blast</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>file_1</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>filename1</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>file_2</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>filename2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 137</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_reciprocal_hits'>find_reciprocal_hits</span><span class='lparen'>(</span><span class='id identifier rubyid_factory1'>factory1</span><span class='comma'>,</span> <span class='id identifier rubyid_factory2'>factory2</span><span class='comma'>,</span> <span class='id identifier rubyid_file_1'>file_1</span><span class='comma'>,</span> <span class='id identifier rubyid_file_2'>file_2</span><span class='comma'>,</span> <span class='id identifier rubyid_coverage'>coverage</span> <span class='op'>=</span> <span class='float'>0.5</span><span class='rparen'>)</span>  <span class='comment'># default value from https://doi.org/10.1093/bioinformatics/btm585
+</span>
+    <span class='id identifier rubyid_possible_orthologues'>possible_orthologues</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='comment'># initialize hash
+</span>
+    <span class='const'>Bio</span><span class='op'>::</span><span class='const'>FlatFile</span><span class='period'>.</span><span class='id identifier rubyid_auto'>auto</span><span class='lparen'>(</span><span class='id identifier rubyid_file_1'>file_1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each_entry'>each_entry</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+
+        <span class='id identifier rubyid_report'>report</span> <span class='op'>=</span> <span class='id identifier rubyid_factory2'>factory2</span><span class='period'>.</span><span class='id identifier rubyid_query'>query</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span>
+        <span class='kw'>next</span> <span class='kw'>if</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hits'>hits</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+        <span class='id identifier rubyid_best_hit'>best_hit</span> <span class='op'>=</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hits'>hits</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='comment'># the best hit is the first one on the report
+</span>        <span class='id identifier rubyid_hit_cov'>hit_cov</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_end'>query_end</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>-</span> <span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_start'>query_start</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_len'>query_len</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='comment'># calculate hit coverage
+</span>        <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_hit_cov'>hit_cov</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span> <span class='op'>&gt;=</span> <span class='id identifier rubyid_coverage'>coverage</span> <span class='comment'># compare it to the threshold value
+</span>
+        <span class='id identifier rubyid_candidate_db2'>candidate_db2</span> <span class='op'>=</span> <span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_definition'>definition</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> 
+        <span class='id identifier rubyid_candidate_db1'>candidate_db1</span> <span class='op'>=</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_definition'>definition</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+
+        <span class='id identifier rubyid_possible_orthologues'>possible_orthologues</span><span class='lbracket'>[</span><span class='id identifier rubyid_candidate_db2'>candidate_db2</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_candidate_db1'>candidate_db1</span> <span class='comment'># add candidates to Hash
+</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Reverse procedure
+</span>    <span class='const'>Bio</span><span class='op'>::</span><span class='const'>FlatFile</span><span class='period'>.</span><span class='id identifier rubyid_auto'>auto</span><span class='lparen'>(</span><span class='id identifier rubyid_file_2'>file_2</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each_entry'>each_entry</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+
+        <span class='id identifier rubyid_report'>report</span> <span class='op'>=</span> <span class='id identifier rubyid_factory1'>factory1</span><span class='period'>.</span><span class='id identifier rubyid_query'>query</span><span class='lparen'>(</span><span class='id identifier rubyid_entry'>entry</span><span class='rparen'>)</span>
+        <span class='kw'>next</span> <span class='kw'>if</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hits'>hits</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+        <span class='id identifier rubyid_best_hit'>best_hit</span> <span class='op'>=</span> <span class='id identifier rubyid_report'>report</span><span class='period'>.</span><span class='id identifier rubyid_hits'>hits</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='comment'># the best hit is the first one on the report
+</span>        <span class='id identifier rubyid_hit_cov'>hit_cov</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_end'>query_end</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>-</span> <span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_start'>query_start</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span><span class='rparen'>)</span><span class='op'>/</span><span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_query_len'>query_len</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='comment'># calculate hit coverage
+</span>        <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_hit_cov'>hit_cov</span><span class='period'>.</span><span class='id identifier rubyid_abs'>abs</span> <span class='op'>&gt;=</span> <span class='id identifier rubyid_coverage'>coverage</span> <span class='comment'># compare it to the threshold value
+</span>
+        <span class='id identifier rubyid_candidate_db1'>candidate_db1</span> <span class='op'>=</span> <span class='id identifier rubyid_best_hit'>best_hit</span><span class='period'>.</span><span class='id identifier rubyid_definition'>definition</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+        <span class='id identifier rubyid_candidate_db2'>candidate_db2</span> <span class='op'>=</span> <span class='id identifier rubyid_entry'>entry</span><span class='period'>.</span><span class='id identifier rubyid_definition'>definition</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>|</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> 
+
+        <span class='kw'>if</span> <span class='id identifier rubyid_possible_orthologues'>possible_orthologues</span><span class='lbracket'>[</span><span class='id identifier rubyid_candidate_db2'>candidate_db2</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='id identifier rubyid_candidate_db1'>candidate_db1</span> <span class='comment'># Check if candidates are in the Hash
+</span>            <span class='cvar'>@@reciprocal_hits</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id identifier rubyid_candidate_db2'>candidate_db2</span><span class='comma'>,</span> <span class='id identifier rubyid_candidate_db1'>candidate_db1</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'># add them to the @@reciprocal_hits class array
+</span>        <span class='kw'>end</span>
+        
+    <span class='kw'>end</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_all_blastdb-class_method">
+  
+    .<strong>get_all_blastdb</strong>  &#x21d2; <tt>Array&lt;Array&lt;String&gt;&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to get the class variable @@all_blastdb</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Array&lt;String&gt;&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>which contains information about the blast database</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_all_blastdb'>get_all_blastdb</span>
+
+    <span class='kw'>return</span> <span class='cvar'>@@all_blastdb</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_fasta_type-class_method">
+  
+    .<strong>get_fasta_type</strong>(filename)  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to define the sequence type of a fasta file.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the name of the fasta file</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sequence type. Options are ‘prot’ or ‘nucleotide’</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 53</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_fasta_type'>get_fasta_type</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_fastafile'>fastafile</span> <span class='op'>=</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>FlatFile</span><span class='period'>.</span><span class='id identifier rubyid_auto'>auto</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_seq_type'>seq_type</span> <span class='op'>=</span> <span class='id identifier rubyid_fastafile'>fastafile</span><span class='period'>.</span><span class='id identifier rubyid_next_entry'>next_entry</span><span class='period'>.</span><span class='id identifier rubyid_to_biosequence'>to_biosequence</span><span class='period'>.</span><span class='id identifier rubyid_guess'>guess</span> <span class='comment'># guess the sequence type of the first entry.
+</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_seq_type'>seq_type</span> <span class='op'>==</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Sequence</span><span class='op'>::</span><span class='const'>NA</span>
+        <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>nucl</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_seq_type'>seq_type</span> <span class='op'>==</span> <span class='const'>Bio</span><span class='op'>::</span><span class='const'>Sequence</span><span class='op'>::</span><span class='const'>AA</span>
+        <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>prot</span><span class='tstring_end'>&#39;</span></span>
+    <span class='kw'>else</span>
+        <span class='id identifier rubyid_abort'>abort</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unable to recognize sequence types of the fasta file </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_filename'>filename</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+    
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_reciprocal_hits-class_method">
+  
+    .<strong>get_reciprocal_hits</strong>  &#x21d2; <tt>Array&lt;Array&lt;Symbol&gt;&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to get the class variable @@reciprocal_hits</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Array&lt;Symbol&gt;&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>which contains the best reciprocal hits</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_reciprocal_hits'>get_reciprocal_hits</span>
+
+    <span class='kw'>return</span> <span class='cvar'>@@reciprocal_hits</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="make_blast_database-class_method">
+  
+    .<strong>make_blast_database</strong>(filename)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Class method to make blast database from a fasta file. </p>
+
+<p>Updates the @@all_blastdb array with the information about the blast database</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>filename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the name of the fasta file</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_make_blast_database'>make_blast_database</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_fasta_type'>fasta_type</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="BlastFun (class)">BlastFun</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_fasta_type'><span class='object_link'><a href="#get_fasta_type-class_method" title="BlastFun.get_fasta_type (method)">get_fasta_type</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='rparen'>)</span> <span class='comment'># get the sequence type of the fasta file
+</span>
+    <span class='id identifier rubyid_basename'>basename</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='id identifier rubyid_filename'>filename</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>.fa</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># obtain basename of the fasta file https://stackoverflow.com/questions/20793180/get-file-name-and-extension-in-ruby
+</span>    <span class='id identifier rubyid_db_name'>db_name</span> <span class='op'>=</span> <span class='id identifier rubyid_basename'>basename</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_db</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_db_path'>db_path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>blastdb/</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_db_name'>db_name</span>
+    
+    <span class='id identifier rubyid_system'>system</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>makeblastdb -in </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_filename'>filename</span><span class='embexpr_end'>}</span><span class='tstring_content'> -dbtype </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_fasta_type'>fasta_type</span><span class='embexpr_end'>}</span><span class='tstring_content'> -out </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_db_path'>db_path</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># run makeblastdb on the system
+</span>
+    <span class='cvar'>@@all_blastdb</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id identifier rubyid_db_path'>db_path</span><span class='comma'>,</span> <span class='id identifier rubyid_db_name'>db_name</span><span class='comma'>,</span> <span class='id identifier rubyid_fasta_type'>fasta_type</span><span class='comma'>,</span> <span class='id identifier rubyid_filename'>filename</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'># update class variable
+</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_report-class_method">
+  
+    .<strong>write_report</strong>(report = &quot;reciprocal_hits_report.tsv&quot;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Writes a .tsv format report with the best reciprocal hits</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>report</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&quot;reciprocal_hits_report.tsv&quot;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The name of the report file. Optional, default is “reciprocal_hits_report.tsv”</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'BlastFun.rb', line 181</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_write_report'>write_report</span><span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reciprocal_hits_report.tsv</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_filename1'>filename1</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>3</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_basename1'>basename1</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='id identifier rubyid_filename1'>filename1</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>.fa</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_filename2'>filename2</span> <span class='op'>=</span> <span class='cvar'>@@all_blastdb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='int'>3</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_basename2'>basename2</span> <span class='op'>=</span> <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_basename'>basename</span><span class='lparen'>(</span><span class='id identifier rubyid_filename2'>filename2</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>.fa</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_open'>open</span><span class='lparen'>(</span><span class='id identifier rubyid_report'>report</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>w</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_f'>f</span><span class='op'>|</span>
+        
+        <span class='id identifier rubyid_f'>f</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_basename1'>basename1</span><span class='embexpr_end'>}</span><span class='tstring_content'>\t</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_basename2'>basename2</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='comment'># heading
+</span>
+        <span class='cvar'>@@reciprocal_hits</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_seq1'>seq1</span><span class='comma'>,</span> <span class='id identifier rubyid_seq2'>seq2</span><span class='op'>|</span>
+            <span class='id identifier rubyid_f'>f</span><span class='period'>.</span><span class='id identifier rubyid_puts'>puts</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_seq1'>seq1</span><span class='embexpr_end'>}</span><span class='tstring_content'>\t</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_seq2'>seq2</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+
+    <span class='kw'>end</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue Jan 10 14:21:56 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.2).
+</div>
+
+    </div>
+  </body>
+</html>

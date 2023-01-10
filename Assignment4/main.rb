@@ -1,25 +1,19 @@
 require './BlastFun'
 
-$stderr.reopen(File.new('/dev/null','w'))
+$stderr.reopen(File.new('/dev/null','w')) # redirect standard error output
 
 # USAGE main.rb arabidopsis.fa spombe.fa
 file1, file2 = ARGV
 
+# Make blast databases from files
 BlastFun.make_blast_database(file1)
 BlastFun.make_blast_database(file2)
 
-alldb = BlastFun.get_all_blastdb
-
-file_1 = alldb[0][3]
-
-file_2 = alldb[1][3]
-
+# Build factories
 fact1, fact2 = BlastFun.build_factories
 
+# Find Best Reciprocal hits
+BlastFun.find_reciprocal_hits(fact1, fact2, file1, file2)
 
-BlastFun.reciprocal_blast(fact1, fact2, file_1, file_2)
-
-# Esto creo que no hace falta, es solo repetir
-# BlastFun.reciprocal_blast(fact2, fact1, file_2, file_1)
-
+# Write report
 BlastFun.write_report
