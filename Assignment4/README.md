@@ -51,3 +51,11 @@ Class to represent all of the information associated with a gene. Methods define
 
 ## Further notes
 
+- To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient [1]
+
+
+## References
+
+[1] Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, Bioinformatics, Volume 24, Issue 3, 1 February 2008, Pages 319-324, https://doi.org/10.1093/bioinformatics/btm585
+
+
