@@ -51,13 +51,27 @@ Class to represent all of the information associated with a gene. Methods define
 
 ## Further notes
 
-- To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient ^{[1]}
-- 
-- Orthology can be estimated from data in two fundamentally differ- ent ways: First, one may start from a gene-tree/species-tree pair (G, S), compute a reconciliation μ and a corresponding event labeling t, and finally convert this into an orthology relation
+### Best Reciprocal Hits parameters
+
+- To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient [1]
+
+### What's next? 
+
+- Two genes are orthologs if their last common ascestor in the tree was a speciation event. Thus, to confirm orthology, by analyzing the phylogenetic trees (i.e. using tree reconciliation algorithms) it is possible to derive a collection of fine-grained predictions of all orthology relationship among sequences [2]. 
+
+- If we want to distinguish between orthologs and paralogs we can implement the Cluster of Orthologous Groups (COG) database [3] or other similars such as EGGNOG [4]
+
+-  Finally, applying the OMA matrix to the COGs obtained may result in OMA-COGs subsets of the true orthology relation [2]. 
 
 
 ## References
 
 [1] Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, *Bioinformatics, Volume 24, Issue 3*, 1 February 2008, Pages 319-324, https://doi.org/10.1093/bioinformatics/btm585
 
+[2] Setubal JC, Stadler PF. Gene Phylogenies and Orthologous Groups. *Methods Mol Biol*. 2018;1704:1-28. doi: 10.1007/978-1-4939-7463-4_1. PMID: 29277861.
+
+[3] Tatusov RL, Koonin EV, Lipman DJ. A genomic perspective on protein families. *Science.* 1997 Oct 24;278(5338):631-7. doi: 10.1126/science.278.5338.631. PMID: 9381173.
+
+[4] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated orthology resource based on 5090 organisms and 2502 viruses. 
+Jaime Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernández-Plaza, Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas Rattei, Lars J Jensen, Christian von Mering, Peer Bork. *Nucleic Acids Res.* 2019 Jan 8; 47(Database issue): D309–D314. doi: 10.1093/nar/gky1085
 
