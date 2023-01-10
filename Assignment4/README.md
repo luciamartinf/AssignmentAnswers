@@ -51,7 +51,9 @@ Class to represent all of the information associated with a gene. Methods define
 
 ## Further notes
 
-- To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient [1]
+- To find the Best reciprocal hits, a maximum E-value threshold of 1×10 − 6 and a coverage of at least 50% were required. In addition, we used a soft Filter method to make the study more computationally efficient ^{[1]}
+- 
+- Orthology can be estimated from data in two fundamentally differ- ent ways: First, one may start from a gene-tree/species-tree pair (G, S), compute a reconciliation μ and a corresponding event labeling t, and finally convert this into an orthology relation
 
 
 ## References
