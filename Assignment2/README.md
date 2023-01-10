@@ -6,7 +6,7 @@ Assignment 2 for the Bioinformatics Programming Challenges course from the Maste
 
 ## USAGE:
 
-`USAGE main.rb ArabidopsisSubNetwork_GeneList.txt report.txt`
+`USAGE: ruby main.rb ArabidopsisSubNetwork_GeneList.txt report.txt`
 
 All the files needed to run the script ar contained in this github repository and detailed below
 
