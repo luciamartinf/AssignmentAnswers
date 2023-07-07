@@ -1,4 +1,4 @@
-# Assigment 3 - GFF feature files and visualization
+# Assignment 3 - GFF feature files and visualization
 
 ### Lucía Martín Fernández
 
